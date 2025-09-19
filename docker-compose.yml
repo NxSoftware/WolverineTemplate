@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: wolverine_template_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: MyDb
+    ports:
+      - "12637:5432"
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
