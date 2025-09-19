@@ -32,3 +32,9 @@ dotnet ef database update --context UsersDbContext
 Running the ASP.NET Core application will also create
 the Wolverine Inbox/Outbox tables in a dedicated `wolverine`
 schema.
+
+Once the migrations have been applied and the application has
+completed its startup procedure, the database should look
+like this:
+
+![Database Schema](docs/images/Database.png)]
